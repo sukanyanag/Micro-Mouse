@@ -21,12 +21,9 @@
 		          	Algorithms
 		        	</a>
 					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-
-
-
 					    <a class="dropdown-item" href="#">Breadth-First Search (BFS)</a>
 						<a class="dropdown-item" href="#">Depth-First Search (DFS)</a>
-						<a class="dropdown-item" href="#">Dijkstra</a>
+						<a class="dropdown-item" href="#">Djikstra's</a>
 
 					</div>
 				  </li>
@@ -60,8 +57,6 @@
 
 	      	<button class="btn btn-outline-success btn-space" type="submit" id="startBtn">Start</button>
 			  <button type="button" class="btn btn-outline-warning btn-space" type="submit" id="clearBtn">Clear Board</button>
-
-
   		</div>
  	</nav>
 
@@ -98,7 +93,6 @@
 <!-- MAIN AREA TO INCLUDE ELEMENT-->
  	<div class="d-flex flex-column align-items-center" id="bigTableContainer">
 		<div id="tableContainer"></div>
-		<!-- <div id="update">Click or drag cells to build walls. <br/>Press the 'Start' button when you finish and have selected an algorithm.</div> -->
  	</div>
 
 	 <!-- SIMPLE MODAL -->
@@ -113,7 +107,7 @@
 		    <div class="modal-content">
 		      <div class="modal-header">
 		      	<div class="container-fluid" id="modalTitleContainer">
-		        	<h3 class="modal-title" id="exampleModalLongTitle">Welcome to myPath!</h3>
+		        	<h3 class="modal-title" id="exampleModalLongTitle">Welcome to Micro Mouse Path Finder!</h3>
 		        </div>
 		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
 		          <span aria-hidden="true">&times;</span>
@@ -121,7 +115,7 @@
 		      </div>
 		      <div class="modal-body">
 		      	<div class="container-fluid" style="line-height: 120%">
-		      		<em style="font-size: 14px;">This is a quick tutorial that demonstrates how myPath works. If you want to skip this, then press the 'X' in the upper right-hand corner.</em>
+		      		<em style="font-size: 14px;">This is a quick tutorial that demonstrates how Micro Mouse works. If you want to skip this, then press the 'X' in the upper right-hand corner.</em>
 		      	</div>
 		      	<hr>
 		        <div class="container-fluid">
@@ -194,7 +188,7 @@
 						    <hr>
 						    <p>If you want to see my source code, check out my github!</p>
 						    </p>
-						    <a href="https://github.com/sathyamtiwary" class="btn btn-primary">Github</a>
+						    <a href="https://github.com/sukanyanag" class="btn btn-primary">Github</a>
 						  </div>
 						</div>
 		        	</div>
@@ -276,20 +270,20 @@
 				    <div class="card-header" id="headingThree">
 				      <h5 class="mb-0">
 				        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-				          Dijkstra
+				          Djikstra
 				        </button>
 				      </h5>
 				    </div>
 				    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
 				      <div class="card-body">
 				        <p>
-				        	<b>How It Works: </b> In Dijkstra's algorithm, all of the nodes in the graph (except the starting node) are initialized with a distance equal to 'infinity.' These distances represents the cost to get from the starting node to the current node, with the starting node having a distance of zero. At the beginning of each iteration, the node with the smallest distance that hasn't been explored yet is visited. These nodes are stored in a min-heap data structure. When a node is visited, all of the neighbors' distances are updated, and if any of the neighbor's distances are lessened, then the algorithm pushes the node onto the min-heap. This continues until the end node has been reached.
+				        	<b>How It Works: </b> In Djikstra's algorithm, all of the nodes in the graph (except the starting node) are initialized with a distance equal to 'infinity.' These distances represents the cost to get from the starting node to the current node, with the starting node having a distance of zero. At the beginning of each iteration, the node with the smallest distance that hasn't been explored yet is visited. These nodes are stored in a min-heap data structure. When a node is visited, all of the neighbors' distances are updated, and if any of the neighbor's distances are lessened, then the algorithm pushes the node onto the min-heap. This continues until the end node has been reached.
 				        </p>
 				        <p>
 				        	<b>Analysis: </b> This is an OK algorithm for pathfinding. This algorithm performs very well in trees with unequal distances between nodes. But since this program only explores horizontally/vertically (with each move costing one), it behaves exactly the same as BFS. It is <u>unweighted</u> but <u>guarantees</u> the shortest path.
 				        </p>
 				        <p class="fun-fact">
-				        	<i><b>Fun Fact: </b> Edsger Dijkstra invented this algorithm in twenty minutes.</i>
+				        	<i><b>Fun Fact: </b> Edsger Djikstra invented this algorithm in twenty minutes.</i>
 				        </p>
 				      </div>
 				    </div>
